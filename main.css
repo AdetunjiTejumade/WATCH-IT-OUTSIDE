@@ -1,0 +1,341 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
+}
+:root{
+    --base-color:rgb(210, 83, 53);
+    --color-2:teal;
+    --color-3:#09B374;
+}
+ 
+ .orange{
+     color: rgb(210, 83, 53);
+ }
+ h1,h2,h3,h4,h5,h6,p,div,hr,body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: inherit;
+  }
+a{
+    text-decoration: none;
+    color:inherit;
+    transition: color 0.3s;
+}
+.lg-nav a:hover, .lg-nav a:focus{
+    color:var(--base-color);
+    text-decoration: underline solid;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: rgb(226, 232, 240);
+}
+.header{
+    background:url(images/admission-2974645_1920.jpg);
+    background-size: cover;
+    /* parallax */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    padding: 1.5rem;
+    height: 3rem;
+    display: flex;
+    /* position: fixed; */
+    /* width :100% */
+    justify-content: space-between;
+}
+
+.text-white{
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+.font-700{
+    font-weight: 700;
+}
+.font-600{
+    font-weight: 600;
+}
+.header-text{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 10rem;
+}
+.absolute{
+    position: absolute;
+}
+.text-xl{
+    font-size: 1.875rem;
+}
+
+.text-lg{
+    font-size: 1.125rem;
+}
+.px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.px-12{
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+.pt-3{
+    padding-top: 0.75rem;
+}
+.pt-12{
+    padding-top: 3rem;
+}
+.pt-6{
+    padding-top: 1.5rem;
+}
+
+.py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.px-3{
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+.pb-6{
+    padding-bottom: 1.5rem;
+}
+.mb-3{
+    margin-bottom: 0.75rem;
+}
+.mr-12{
+    margin-right: 3rem;
+}
+.mt-12{
+    margin-top: 3rem;
+}
+.mt-6{
+    margin-top: 1.5rem;
+}
+.mr-3{
+    margin-right: 0.75rem;
+}
+img{
+    width: 100%;
+}
+hr{
+    border-top-width: 1px;
+}
+.down-arrow:hover{
+    color: var(--base-color);
+}
+input{
+    display: block;
+}
+.input{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid rgb(204, 204, 204);
+    color: rgb(175, 175, 175);
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.5s;
+}
+.input:focus{
+    border-color: var(--color-2);
+}
+.btn{
+    color: white;
+    border-radius: 0.25rem;
+    background-color: var(--color-2);
+}
+footer{
+    background-color: var(--color-2);
+}
+/* social links */
+.social a{
+    display: inline-block;
+    color: white;
+    padding-top: 0.75rem;
+    padding-right: 1rem;
+    /* transition: color 0.5s; */
+}
+.social a:hover i{
+         color: var(--base-color);
+}
+.heart{
+    color: var(--base-color);
+    font-size: 1.5rem;
+}
+.hide-sm{
+    display: none;
+}
+/* .active{
+    color:rgb(210, 83, 53);
+    text-decoration: underline solid;
+} */
+.hd-text1{
+    font-size: 2rem;
+}
+.hd-text2{
+    font-size: 1.5rem;
+}
+
+/*  */
+.movie{
+    box-shadow: 1px 5px 10px #a09494;
+    border-radius: 5px;
+    min-height: 12rem;
+}
+@media only screen and (min-width: 450px) {
+    .sm-full{
+        padding: 0 6rem;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .sm-full{
+        padding: 0;
+    }
+    .header-text{
+        padding-top: 5rem;
+    }
+    .social a{
+        padding-right: 3rem;
+    }
+    .mid-flex{
+        display: flex;
+    }
+  
+    .mid-w-50{
+        width: 50%;
+    }
+    .mid-text-4xl{
+        font-size: 3.875rem;
+    }
+    .mid-text-3xl{
+        font-size: 2.875rem;
+    }
+    .hide-lg{
+        display: none;
+    }
+    .show-lg{
+        display: flex;
+    }
+    .header{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .main-section{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .mid-mr-3{
+        margin-right: 0.75rem;
+    }
+    .w-30{
+        width: 31%;
+        /* height: 20rem; */
+    }
+    .w-30 img{
+        max-height: 15rem;
+    }
+    /* .mid-grid{
+        display: grid;
+
+    } */
+}
+@media only screen and (min-width: 1024px) {
+    .lg-text-4xl{
+        font-size: 4.875rem;
+    }
+    .lg-text-3xl{
+        font-size: 3.875rem;
+    }
+    .main-section{
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+    .about{
+        /* text-align: center; */
+    }
+
+    
+}
+.h-30{
+    height: 20rem;
+}
+
+.shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+/* .news{
+    width: fit-content;
+} */
+.dash::before{
+    content: "";
+    border: solid teal ;
+    margin-right: 6px;
+}
+.upper{
+    text-transform: uppercase;
+}
+
+/* overlay nav */
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.3s;
+
+    
+}
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a{
+    display: block;
+    color: white;
+    padding: 8px;
+    transition: 0.3s;
+}
+.overlay a:hover , .overlay a:focus{
+    color: var(--base-color);
+    text-decoration: underline solid;
+}
+.overlay .closebtn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* make reservation button */
+.res-btn{
+    height: 1.875rem;
+}
+
+.res-btn:hover{
+    color: var(--color-2);
+
+}
