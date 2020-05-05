@@ -7,7 +7,9 @@ html {
     --color-2:teal;
     --color-3:#09B374;
 }
- 
+ body{
+     color: rgb(60, 58, 58);
+ }
  .orange{
      color: rgb(210, 83, 53);
  }
@@ -154,6 +156,7 @@ input{
 }
 .input:focus{
     border-color: var(--color-2);
+     color: var(--base-color);
 }
 .btn{
     color: white;
@@ -338,4 +341,10 @@ footer{
 .res-btn:hover{
     color: var(--color-2);
 
+}
+
+/* Footer Links */
+.link:hover{
+    text-decoration: underline;
+    
 }

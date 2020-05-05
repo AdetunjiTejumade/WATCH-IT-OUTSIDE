@@ -13,22 +13,22 @@ const btns = document.querySelectorAll('.res-btn')
      btns[i].addEventListener("click", () => {
          switch (btns[i].value) {
              case "knife-out":
-                setDate.value = "2020-05-15"
+                setDate.value = "2020-07-05 : KNIFES OUT"
                  break;
             case "the-great":
-                setDate.value = "2020-05-20"
+                setDate.value = "2020-07-06 : THE GREAT"
                  break;
             case "future-man":
-                setDate.value = "2020-05-23"
+                setDate.value = "2020-07-07 : FUTURE MAN"
                  break;
             case "summertime":
-                setDate.value = "2020-05-27"
+                setDate.value = "2020-07-07 : SUMMERTIME"
                 break;
             case "inTheDark":
-                setDate.value = "2020-05-29"
+                setDate.value = "2020-07-08 : IN THE DARK"
                 break;
             case "dangerousGame":
-                setDate.value = "2020-05-30"
+                setDate.value = "2020-07-08 : MOST DANGEROUS GAME"
                 break;
              default:
                  break;
