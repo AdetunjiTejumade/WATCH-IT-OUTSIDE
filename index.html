@@ -1,251 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Watch it Outside-Boston</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./stylesheets/main.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/bootstrap/css/bootstrap.min.css ">
+    <link rel="stylesheet" href="./stylesheets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 </head>
 
 <body>
     <div class="mx-auto">
-        <div class="header" id="header">
-            <div class="md:px-12 nav lg-nav">
-                <div class="text-white">
-                    <h1 class="font-bold">Watch It Outside</h1>
+        <div class="header px-md-5 pt-3" id="header">
+
+            <nav class="">
+
+                <div class="d-flex p-4 navbar navbar-expand-md">
+                    <div class="mr-auto ">
+                        <h1 class="text-white ">Watch It Outside</h1> <!-- My css-->
+                    </div>
+
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <a href="#" class="text-white " onclick="openNav()">&#9776;</a>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="nav navbar-nav ml-auto text-white">
+                            <a class="mr-12 active " href="#header">Home</a>
+                            <a class="mr-12" href="#about">About</a>
+                            <a class="mr-12" href="#movies">Movies</a>
+                            <a class="" href="#reservation">Reservation</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Overlay nav on small screens -->
+
+                    <div id="smallNav" class="overlay">
+                        <a href="javascript:void(0)" onclick="closeNav()"" class="closebtn">&times;</a>
+
+
+                        <div class="overlay-content font-weight-bold text-1">
+                            <a class="overlay-links" href="#header" onclick="closeNav()">Home</a>
+                            <a class="overlay-links" href="#about">About</a>
+                            <a class="overlay-links" href="#movies">Movies</a>
+                            <a class="overlay-links" href="#reservation">Reservation</a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="hide-lg">
-                    <a href="#" class="text-white" onclick="openNav()">&#9776;</a>
+            </nav>
+
+            <div>
+                <div class="header-text">
+                    <div class="text-white ">
+                        <h1 class="sm-text text-md-4">WATCH IT OUTSIDE </h1>
+                        <h1 class="xm-text text-md-3">BOSTON EDITION</h1>
+                        <h4 class="xm-text">AUGUST 5th - 8th</h4>
+
+                    </div>
                 </div>
-                <div class="hide-sm show-lg nav-items text-white">
-                    <a class="mr-12 active" href="#header">Home</a>
-                    <a class="mr-12" href="#about">About</a>
-                    <a class="mr-12" href="#movies">Movies</a>
-                    <a href="#reservation">Reservation</a>
-                </div>
-            </div>
-            <!-- Overlay nav on small screens -->
-
-            <div id="smallNav" class="overlay">
-                <a href="javascript:void(0)" onclick="closeNav()"" class=" closebtn"">&times;</a>
-
-
-                <div class="overlay-content font-700 text-xl">
-                    <a class="" href="#header">Home</a>
-                    <a class="" href="#about">About</a>
-                    <a class="" href="#movies">Movies</a>
-                    <a href="#reservation">Reservation</a>
-                </div>
-            </div>
-            <div class="header-text">
-                <!-- <img src="images/ftps.jpg" alt=""> -->
-                <div class="text-white">
-                    <h1 class="font-bold hd-text1 lg-text-4xl mid-text-4xl">WATCH IT OUTSIDE </h1>
-                    <h1 class="font-bold hd-text2 lg-text-3xl mid-text-3xl">BOSTON EDITION</h1>
-                    <h4 class="font-bold hd-text2">AUGUST 5th - 8th</h4>
-                    <!-- <h4 class="font-bold text-lg"></h4> -->
-                </div>
-
-
-            </div>
-
-
-
-            <div class="absolute" style="bottom: 8%; left: 50%; transform: translate(-50%,-50%);">
-                <div>
-                    <a href="#about"><i class="fa fa-arrow-down text-3xl text-white down-arrow"></i></a>
-                </div>
-
             </div>
 
         </div>
-        <!-- About Us -->
-        <div class="main-section">
-
-
-            <div id="about" class="px-6 pt-12 about">
+        <div class="px-6">
+            <div class="container-fluid pt-4" id="about">
                 <div>
-                    <h1 class="text-lg font-bold w-40 dash">About us</h1>
+                    <h1 class="font-weight-bold xm-text">About Us</h1>
                 </div>
                 <div class="pt-3">
                     <p>Watch it outside is an international outdoors film festival. Our mission is to build public
-                        interest in films. Our aim is to encourage people to come together to enjoy films and the outdoors.Its open to everyone. Make your reservations.</p>
+                        interest in films. Our aim is to encourage people to come together to enjoy films and the
+                        outdoors.Its open to everyone. Make your reservations.</p>
                 </div>
             </div>
-            <!-- Every night from the 5th to 8th of august, we will -->
-            <div class="px-6  pt-12" id="movies">
+
+            <div class="pt-4 container-fluid" id="movies">
                 <div class="">
-                    <h1 class="font-700 text-lg dash">Movies</h1>
+                    <h1 class="xm-text font-weight-bold">Movies</h1>
                 </div>
-                <div class="mid-flex sm-full" style="flex-wrap: wrap; ">
-                    <div class="mt-6 mid-mr-3 w-30 shadow-xl ">
-                        <div>
-                            <img src="images/22158.jpg" alt="knifes-out">
-                        </div>
-                        <div class="pt-3 px-3 pb-6">
-                            <h4 class="orange">KNIFES OUT</h4>
 
-                            <small class="pt-3">5 August 2020</small>
-                            <a href="#reservation"><button class="res-btn" value="knife-out">Make Reservation</button></a>
+                <div class="pt-3 d-md-flex flex-md-wrap">
+                    <div class="card mx-auto w-30 mt-3">
+                        <img src="images/22158.jpg" alt="knifes-out" class="card-img-top img-md-20">
+                        <div class="card-body">
+                            <h4 class="orange card-title">KNIFES OUT</h4>
+                            <small class="card-text text-muted">5 August 2020</small>
+                            <a href="#reservation"><button class="btn res-btn" value="knife-out">Make
+                                    Reservation</button></a>
                         </div>
-
                     </div>
 
-                    <div class=" mt-6 mid-mr-3 w-30 shadow-xl ">
-                        <div>
-                            <img src="images/1..jpg" alt="the-great">
-                        </div>
-                        <div class="pt-3 px-3 pb-6">
-                            <h4 class="orange">THE GREAT</h4>
 
-                            <small class="pt-3">6 August 2020</small>
-                            <a href="#reservation"><button class="res-btn" value="the-great">Make Reservation</button></a>  
+                    <div class="card mx-auto w-30 mt-3">
+                        <img src="images/1..jpg" alt="the-great" class="card-img-top img-md-20">
+                        <div class="card-body">
+                            <h4 class="orange card-title">THE GREAT</h4>
+                            <small class="card-text text-muted">6 August 2020</small>
+                            <a href="#reservation"><button class="btn res-btn" value="the-great">Make
+                                    Reservation</button></a>
                         </div>
-
                     </div>
 
-                    <div class=" mt-6 mid-mr-3 w-30 shadow-xl ">
-                        <div>
-                            <img src="images/3..jpg " alt="future-man">
-                        </div>
-                        <div class="pt-3 px-3 pb-6">
+
+
+                    <div class="card mx-auto w-30 mt-3">
+                        <img src="images/3..jpg " alt="future-man" class="card-img-top img-md-20">
+                        <div class="card-body">
                             <h4 class="orange">FUTURE MAN</h4>
-
-                            <small class="pt-3">7 August 2020</small>
-                            <a href="#reservation"> <button class="res-btn" value="future-man">Make Reservation</button></a>
+                            <small class="card-text text-muted">6 August 2020</small>
+                            <a href="#reservation"> <button class="btn res-btn" value="future-man">Make Reservation</button></a>
                         </div>
-
                     </div>
 
-
-                    <div class=" mt-6 mid-mr-3 w-30 shadow-xl ">
-                        <div>
-                            <img src="images/2..jpg" alt="summertime">
-                        </div>
-                        <div class="pt-3 px-3 pb-6">
+                    <div class="card mx-auto w-30 mt-3">
+                        <img src="images/2..jpg" alt="summertime" class="card-img-top img-md-20">
+                        <div class="card-body">
                             <h4 class="orange">SUMMERTIME</h4>
-
-                            <small class="pt-3">7 August 2020</small>
-                            <a href="#reservation"> <button class="res-btn" value="summertime">Make Reservation</button> </a>
+                            <small class="card-text text-muted">7 August 2020</small>
+                            <a href="#reservation"> <button class="btn res-btn" value="summertime">Make Reservation</button></a>
                         </div>
-
                     </div>
 
-                    <div class=" mt-6 mid-mr-3 w-30 shadow-xl ">
-                        <div>
-                            <img src="images/4..jpg" alt="in the dark">
-                        </div>
-                        <div class="pt-3 px-3 pb-6">
+                    <div class="card mx-auto w-30 mt-3">
+                        <img src="images/4..jpg" alt="in the dark" class="card-img-top img-md-20">
+                        <div class="card-body">
                             <h4 class="orange">IN THE DARK</h4>
-
-                            <small class="pt-3">8 August 2020</small>
-                            <a href="#reservation"><button class="res-btn" value="inTheDark">Make Reservation</button></a>
+                            <small class="card-text text-muted">8 August 2020</small>
+                            <a href="#reservation"><button class="btn res-btn" value="inTheDark">Make Reservation</button></a>
                         </div>
-
                     </div>
 
-                    <div class=" mt-6 mid-mr-3 w-30 shadow-xl ">
-                        <div>
-                            <img src="images/5..jpg" alt="most dangerous game">
-                        </div>
-                        <div class="pt-3 px-3 pb-6">
+                    <div class="card mx-auto w-30 mt-3">
+                        <img src="images/5..jpg" alt="most dangerous game" class="card-img-top img-md-20">
+                        <div class="card-body">
                             <h4 class="orange">MOST DANGEROUS GAME</h4>
-
-                            <small class="pt-3">8 August 2020</small>
-
-                            <a href="#reservation"><button class="res-btn" value="dangerousGame">Make Reservation</button></a>
+                            <small class="card-text text-muted">8 August 2020</small>
+                            <a href="#reservation"><button class="btn res-btn" value="dangerousGame">Make
+                                    Reservation</button></a>
                         </div>
-
                     </div>
+
+
+
                 </div>
-
-
 
             </div>
-            <div class="px-6 pt-12" id="reservation">
-                <div class="center">
-                    <h1 class="font-600 text-lg">Make Reservations</h1>
+            <div class="pt-4 container-fluid" id="reservation">
+                <div class="text-center">
+                    <h1 class="">Make Reservations</h1>
                 </div>
-
-                <div>
-                    <form>
-                        <div class="mid-flex">
-                            <div class="mid-mr-3 mid-w-50">
-                                <label>First Name</label>
-                                <input type="text" class="input mb-3"></div>
-                            <div class="mid-w-50">
-                                <label>Last Name</label>
-                                <input type="text" class="input mb-3">
-                            </div>
-
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>First Name</label>
+                            <input type="text" class="form-control form-control-lg">
                         </div>
 
+                        <div class="form-group col-md-6">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control form-control-lg">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
                         <label>Email</label>
-                        <input type="text" class="input mb-3">
-                        <div class="mid-flex">
-                            <div class="mid-mr-3 mid-w-50">
-                                <label>Seats</label>
-                                <input type="number" class="input mb-3">
-                            </div>
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
 
-                            <div class="mid-w-50">
-                                <label>Date</label>
-                                <!-- date
-                                
-                                <input type="date" class="input mb-3" id="set-date"> -->
-                                <select class="input mb-3" id="set-date">
-                                    <option>
-                                        2020-07-05 : KNIFES OUT
-                                    </option>
-                                    <option>
-                                        2020-07-06 : THE GREAT
-                                    </option>
-
-                                    <option>
-                                        2020-07-07 : FUTURE MAN
-                                    </option>
-                                    <option>
-                                        2020-07-07 : SUMMERTIME
-                                    </option>
-                                    <option>
-                                        2020-07-08 : IN THE DARK
-                                    </option>
-                                    <option >
-                                        2020-07-08 : MOST DANGEROUS GAME
-                                    </option>
-                                </select>
-                            </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>Seats</label>
+                            <input type="number" class="form-control form-control-lg">
                         </div>
 
-                        <div class="center pt-6">
-                            <button class="px-12 py-3 btn">Submit</button>
+                        <div class="form-group col-md-6">
+                            <label>Date</label>
+
+                            <select class="form-control form-control-lg" id="set-date">
+                                <option>
+                                    2020-07-05 : KNIFES OUT
+                                </option>
+                                <option>
+                                    2020-07-06 : THE GREAT
+                                </option>
+
+                                <option>
+                                    2020-07-07 : FUTURE MAN
+                                </option>
+                                <option>
+                                    2020-07-07 : SUMMERTIME
+                                </option>
+                                <option>
+                                    2020-07-08 : IN THE DARK
+                                </option>
+                                <option>
+                                    2020-07-08 : MOST DANGEROUS GAME
+                                </option>
+                            </select>
                         </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button class="btn bg-teal text-white px-5 py-3" type="submit">Submit</button>
+                    </div>
 
 
-                    </form>
-                </div>
+                </form>
             </div>
 
-            <!-- News -->
-            <div class="px-6 pt-12">
+            <div class="container-fluid pt-4">
                 <div>
-                    <h1 class="text-lg font-700">News</h1>
+                    <h1 class="font-weight-bold xm-text">News</h1>
                 </div>
 
-                <div class="mid-flex">
-                    <div class="pt-6 mr-3 w-30 ">
-                        <div>
-                            <img src="images/images (5).jpg" alt="">
-                        </div>
+                <div class="d-md-flex mt-4 ">
+                    <div class="card w-33 mt-3 mr-md-3">
 
-                        <div class="pt-3 ">
-                            <h1 class="font-600 text-lg orange upper">A review of Watch it outside Sidney</h1>
-                            <div class="py-3">
+                        <img src="images/images (5).jpg" alt="" class="card-img-top img-md-15">
+
+
+                        <div class="card-body">
+                            <h1 class="text-uppercase orange card-title">A review of Watch it outside Sidney</h1>
+                            <div class="card-text">
                                 <p>This a review of the previous Watch it outside event.... Boston should be expecting a
                                     lot....
                                 </p>
@@ -257,15 +236,16 @@
                     </div>
 
 
-                    <div class="pt-6 mid-mr-3 w-30">
-                        <div>
-                            <img src="images/film_festival_parc_shutterstock_220181725.jpg" alt="">
-                        </div>
 
-                        <div class="pt-3">
-                            <h1 class="font-600 text-lg orange upper">Announcing Watch it outside: the Boston Edition
+                    <div class="card mt-3 w-33 mr-md-3">
+
+                        <img src="images/film_festival_parc_shutterstock_220181725.jpg" class="card-img-top img-md-15">
+
+
+                        <div class="card-body">
+                            <h1 class="text-uppercase orange card-title">Announcing Watch it outside: the Boston Edition
                             </h1>
-                            <div class="py-3">
+                            <div class="card-text">
                                 <p>Watch it outside is hosting a film festival in Boston from the ..... Ticket will soon
                                     be available on our site
                                 </p>
@@ -276,43 +256,57 @@
 
                     </div>
 
+                    <div class="card mt-3 w-33 mr-md-3">
 
-                    <div class="pt-6 mid-mr-3 w-30 ">
-                        <div>
-                            <img src="images/movie-918655_1920.jpg" alt="">
-                        </div>
+                        <img src="images/movie-918655_1920.jpg" class="card-img-top img-md-15">
 
-                        <div class="pt-3 px-3">
-                            <h1 class="font-600 text-lg orange upper">Boston park</h1>
-                            <div class="py-3">
+
+                        <div class="card-body">
+                            <h1 class="text-uppercase orange card-title">Boston park</h1>
+                            <div class="card-text">
                                 <p>A tour of the boston park.... The park will be the location for the upcoming watch it
                                     outside
                                 </p>
                             </div>
                         </div>
 
-
                         <hr>
+
                     </div>
 
+
                 </div>
+
+
+
+
             </div>
+
+
+
+
+
+
+
         </div>
-        <footer class="px-6 mt-12 center">
-            <div class="social">
-                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i> Twitter</a>
-                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i> Facebook</a>
-                <a href="https://www.instagram.com"><i class="fa fa-instagram"></i> Instagram</a>
+        <footer class="container-fluid mt-5 text-center">
+            <div class="social pt-3">
+                <a href="https://www.twitter.com" class="mr-4 h-orange"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="https://www.facebook.com" class="mr-4 h-orange"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com" class="h-orange"><i class="fa fa-instagram"></i> Instagram</a>
             </div>
-            <div class="mt-12 text-white ">
+            <div class="mt-2 pb-3 ">
                 <!-- <p class="text-white">Made with <span class="heart">&hearts; </span>by Adetunji Tejumade</p> -->
-                <a class="mr-3 link" href="https://boston.com">Boston News</a>
-                <a class="link" href="https://boston.gov/departments/">Boston Park</a>
+                <a class="mr-3 h-orange" href="https://boston.com">Boston News</a>
+                <a class=" h-orange" href="https://boston.gov/departments/">Boston Park</a>
             </div>
         </footer>
     </div>
 
+
+
+
 </body>
-<script src='main.js'></script>
+<script src="main.js"></script>
 
 </html>
