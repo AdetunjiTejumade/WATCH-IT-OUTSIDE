@@ -72,7 +72,7 @@ hr{
     border-color: rgb(226, 232, 240);
 }
 .header{
-    background: url(../images/admission-2974645_1920.jpg);
+    background:url(../images/admission-2974645_1920.jpg);
     background-size: cover;
      /* parallax */
      background-position: center;
@@ -88,6 +88,7 @@ hr{
     position: relative;
     padding-top: 10rem;
 }
+
 
 
 .mr-12{

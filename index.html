@@ -6,65 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./stylesheets/bootstrap/css/bootstrap.min.css ">
+    <script src="stylesheets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="./stylesheets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="mx-auto">
-        <div class="header px-md-5 pt-3" id="header">
-
-            <nav class="">
-
-                <div class="d-flex p-4 navbar navbar-expand-md">
-                    <div class="mr-auto ">
-                        <h1 class="text-white ">Watch It Outside</h1> <!-- My css-->
-                    </div>
-
-                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <a href="#" class="text-white " onclick="openNav()">&#9776;</a>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="nav navbar-nav ml-auto text-white">
-                            <a class="mr-12 active " href="#header">Home</a>
-                            <a class="mr-12" href="#about">About</a>
-                            <a class="mr-12" href="#movies">Movies</a>
-                            <a class="" href="#reservation">Reservation</a>
+        
+                <div class="header px-md-5 pt-3" id="header">
+    
+                    <nav class="">
+        
+                        <div class="d-flex p-4 navbar navbar-expand-md">
+                            <div class="mr-auto ">
+                                <h1 class="text-white ">Watch It Outside</h1> <!-- My css-->
+                            </div>
+        
+                            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                                <a href="#" class="text-white " onclick="openNav()">&#9776;</a>
+                            </button>
+        
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <div class="nav navbar-nav ml-auto text-white">
+                                    <a class="mr-12 active " href="#header">Home</a>
+                                    <a class="mr-12" href="#about">About</a>
+                                    <a class="mr-12" href="#movies">Movies</a>
+                                    <a class="" href="#reservation">Reservation</a>
+                                </div>
+        
+                            </div>
+        
+                            <!-- Overlay nav on small screens -->
+        
+                            <div id="smallNav" class="overlay">
+                                <a href="javascript:void(0)" onclick="closeNav()"" class="closebtn">&times;</a>
+        
+        
+                                <div class="overlay-content font-weight-bold text-1">
+                                    <a class="overlay-links" href="#header" onclick="closeNav()">Home</a>
+                                    <a class="overlay-links" href="#about">About</a>
+                                    <a class="overlay-links" href="#movies">Movies</a>
+                                    <a class="overlay-links" href="#reservation">Reservation</a>
+                                </div>
+                            </div>
+        
                         </div>
-
-                    </div>
-
-                    <!-- Overlay nav on small screens -->
-
-                    <div id="smallNav" class="overlay">
-                        <a href="javascript:void(0)" onclick="closeNav()"" class="closebtn">&times;</a>
-
-
-                        <div class="overlay-content font-weight-bold text-1">
-                            <a class="overlay-links" href="#header" onclick="closeNav()">Home</a>
-                            <a class="overlay-links" href="#about">About</a>
-                            <a class="overlay-links" href="#movies">Movies</a>
-                            <a class="overlay-links" href="#reservation">Reservation</a>
+                    </nav>
+        
+                    <div>
+                        <div class="header-text">
+                            <div class="text-white ">
+                                <h1 class="sm-text text-md-4">WATCH IT OUTSIDE </h1>
+                                <h1 class="xm-text text-md-3">BOSTON EDITION</h1>
+                                <h4 class="xm-text">AUGUST 5th - 8th</h4>
+        
+                            </div>
                         </div>
                     </div>
-
+        
                 </div>
-            </nav>
-
-            <div>
-                <div class="header-text">
-                    <div class="text-white ">
-                        <h1 class="sm-text text-md-4">WATCH IT OUTSIDE </h1>
-                        <h1 class="xm-text text-md-3">BOSTON EDITION</h1>
-                        <h4 class="xm-text">AUGUST 5th - 8th</h4>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
+                
+            
+        
+        
+        
         <div class="px-6">
             <div class="container-fluid pt-4" id="about">
                 <div>
@@ -88,8 +96,7 @@
                         <div class="card-body">
                             <h4 class="orange card-title">KNIFES OUT</h4>
                             <small class="card-text text-muted">5 August 2020</small>
-                            <a href="#reservation"><button class="btn res-btn" value="knife-out">Make
-                                    Reservation</button></a>
+                           
                         </div>
                     </div>
 
@@ -99,8 +106,7 @@
                         <div class="card-body">
                             <h4 class="orange card-title">THE GREAT</h4>
                             <small class="card-text text-muted">6 August 2020</small>
-                            <a href="#reservation"><button class="btn res-btn" value="the-great">Make
-                                    Reservation</button></a>
+                          
                         </div>
                     </div>
 
@@ -111,7 +117,7 @@
                         <div class="card-body">
                             <h4 class="orange">FUTURE MAN</h4>
                             <small class="card-text text-muted">6 August 2020</small>
-                            <a href="#reservation"> <button class="btn res-btn" value="future-man">Make Reservation</button></a>
+                           
                         </div>
                     </div>
 
@@ -120,7 +126,7 @@
                         <div class="card-body">
                             <h4 class="orange">SUMMERTIME</h4>
                             <small class="card-text text-muted">7 August 2020</small>
-                            <a href="#reservation"> <button class="btn res-btn" value="summertime">Make Reservation</button></a>
+                            
                         </div>
                     </div>
 
@@ -129,7 +135,7 @@
                         <div class="card-body">
                             <h4 class="orange">IN THE DARK</h4>
                             <small class="card-text text-muted">8 August 2020</small>
-                            <a href="#reservation"><button class="btn res-btn" value="inTheDark">Make Reservation</button></a>
+                            
                         </div>
                     </div>
 
@@ -138,8 +144,7 @@
                         <div class="card-body">
                             <h4 class="orange">MOST DANGEROUS GAME</h4>
                             <small class="card-text text-muted">8 August 2020</small>
-                            <a href="#reservation"><button class="btn res-btn" value="dangerousGame">Make
-                                    Reservation</button></a>
+                            
                         </div>
                     </div>
 
